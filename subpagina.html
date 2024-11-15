@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GESTOR</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header>
+        <img src="fotos/gerente.png" alt="" class="fotoh">
+        <h1 class="tit">ADMINISTRADOR</h1>
+        <img src="fotos/gerente.png" alt="" class="fotoh">
+    </header>
+    <div class="menu">
+        <button type="button" class="listar">
+            <a href="lista.php"><h3>VER LISTA DE CLIENTES</h3></a>
+        </button>
+        <button type="button" class="crear"><h3>CREAR NUEVO CLIENTE</h3></button>
+        <button type="button" class="eliminar"><h3>ELIMINAR UN CLIENTE</h3></button>
+        <button type="button" class="modificar"><h3>MODIFICAR CLIENTE</h3></button>
+    </div>
+
+    <div id="popupCrear" class="popup" style="display: none;">
+        <h1>AÑADIR CLIENTE</h1>
+        <form id="formClienteCrear" action="guardarCliente.php" method="post">
+            <input type="text" id="nombreCrear" name="nombre" class="texto" placeholder="NOMBRE" required><br>
+            <input type="text" id="apellidoCrear" name="apellido" class="texto" placeholder="APELLIDOS" required><br>
+            <input type="text" id="compraCrear" name="coche" class="texto" placeholder="ULTIMA COMPRA" required><br>
+            <input type="text" id="fotoCrear" name="foto" class="texto" placeholder="RUTA FOTO PERFIL" required><br>
+            <button type="submit" id="aceptarCrear" class="aceptarboton">ACEPTAR</button>
+        </form>
+        
+    </div>
+    <div id="popupEliminar" class="popupeliminar" style="display: none;">
+        <h1>ELIMINAR</h1>
+        <form id="formClienteEliminar" action="eliminarCliente.php" method="post">
+            <p>Ingrese el ID del usuario que desea eliminar, consulta el id en mysql</p>
+            <input type="number" id="idEliminar" name="id" class="numero" placeholder="ID" required>
+            <br>
+            <button type="submit" id="aceptarEliminar" class="aceptarboton">ACEPTAR</button>
+            <button type="button" id="cancelarEliminar" class="aceptarboton">CANCELAR</button>
+        </form>
+    </div>
+
+    <div id="popupModificar" class="popup" style="display: none;">
+        <h1>MODIFICAR CLIENTE</h1>
+        <form id="formClienteModificar" action="modificarCliente.php" method="post">
+            <h4>ID DEL CLIENTE QUE DESEA MODIFICAR</h4>
+            <input type="number" id="idModificar" name="id" class="numero" placeholder="ID" required>
+            <input type="text" id="nombreModificar" name="nombre" class="texto" placeholder="NOMBRE" required><br>
+            <input type="text" id="apellidoModificar" name="apellido" class="texto" placeholder="APELLIDOS" required><br>
+            <input type="text" id="compraModificar" name="coche" class="texto" placeholder="ULTIMA COMPRA" required><br>
+            <input type="text" id="fotoModificar" name="foto" class="texto" placeholder="RUTA FOTO PERFIL" required>
+            <br>
+            <button type="submit" id="aceptarModificar" class="aceptarboton">ACEPTAR</button>
+            <button type="button" id="cancelarModificar" class="aceptarboton">CANCELAR</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="jquery.js"></script>
+</body>
+</html>

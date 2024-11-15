@@ -1,0 +1,293 @@
+body{
+    background-color: black;
+    color: rgb(124, 251, 255);
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    background: linear-gradient(270deg, #030850, #000000);
+    background-color: brown;
+    background-size: 800% 800%;
+    animation: gradientMove 12s ease infinite;
+    height: 100vh;
+    margin: 0;
+    
+}
+
+@keyframes gradientMove {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+header{
+    background-color:  rgb(23, 38, 51);
+    display: flex;
+    justify-content: space-between;
+}
+.tit{
+    padding: 1%;
+    color: rgb(124, 251, 255);
+}
+.fotoh{
+    width: 7%;
+}
+/*LOGIN*/
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background:  rgb(23, 38, 51);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+  }
+  
+  .login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  .login-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+  }
+  
+  .login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+  }
+a{
+    color: rgb(124, 251, 255);
+}
+.acceder{
+text-decoration: underline;
+}
+.acceder:hover{
+    font-size: 120%;
+    transition: 1s;
+    border-radius: 100%;
+    border: solid 1px;
+    text-decoration: none;
+  }
+button{
+  text-decoration: none;
+  background: none;
+  border: none;
+  color: rgb(124, 251, 255);
+  font-family: "Share Tech Mono", monospace;
+  font-size: 120%;
+}
+/*SUBPAGINA 1*/
+.menu {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 0%;
+  border-radius: 5%;
+position: relative;
+  z-index: 10;
+}
+.crear{
+  width: 100%;
+}
+.eliminar{
+  width: 100%;
+}
+.listar{
+  width: 100%;
+}
+.modificar{
+  width: 100%;
+}
+h3{
+padding:3%;
+}
+h3:hover{
+  background-color: rgba(113, 189, 255, 0.199);
+}
+h3:hover{
+  font-size: 140%;
+  transition: 1s;
+  cursor: pointer;
+}
+/*LISTADOS*/
+.linktit{
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+.contenedor{
+  padding-top: 1%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.carta {
+  display: flex;
+  align-items: center;
+  width: 25%;
+  background-color: rgb(23, 38, 51);
+  border-radius: 4%;
+  margin: 1%;
+}
+.carta:hover{
+  background-color: rgba(113, 189, 255, 0.137);
+  transition: 1s;
+}
+.izquierda {
+  flex: 0 0 40%; 
+  margin-right: 10px; 
+}
+
+.fotoperfil {
+  width: 100%;
+  height: auto;
+  border-radius: 4%;
+}
+
+.derecha {
+  flex: 1;
+  display: flex;
+  flex-direction: row; 
+  gap: 8px; 
+  align-items: center;
+  width: 0%;
+  flex-wrap: wrap; 
+}
+
+.nombre {
+  margin-bottom: -10%;
+}
+.apellido {
+margin-bottom: -10%;
+}
+.contactar{
+  border-radius: 20%;
+  cursor: pointer;
+}
+.contactarfoto{
+  width: 10%;
+  min-width: 30px;
+  margin-top: 12%;
+  background-color: rgb(124, 251, 255);
+  border-radius: 100%;
+}
+.contactar:hover{
+  background-color: rgb(124, 251, 255);
+  transition: 2s;
+}
+.contactar:active{
+  background-color: #000000;
+}
+.botones{
+  display: flex;
+  align-items: center;
+}
+/* Popup */
+.popup {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: fixed; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(23, 38, 51);/*color buscado sin opacidad ANGEL!!!*/
+  text-align: center;
+  padding: 20px;
+  width: 300px;
+  border-radius: 8px;
+  z-index: 9999; 
+}
+.popupeliminar  {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: fixed; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(23, 38, 51);/*color buscado sin opacidad ANGEL!!!*/
+  text-align: center;
+  padding: 20px;
+  width: 300px;
+  border-radius: 8px;
+  z-index: 9999; 
+}
+.texto {
+  background-color: #98faff;
+  border-radius: 5%;
+  margin-top: 5%;
+  border: none;
+  padding: 8px;
+  width: 90%;
+}
+.texto::placeholder{
+  text-align: center;
+}
+.numero{
+  background-color: #98faff;
+  width: 10%;
+  border: none;
+}
+.numero::placeholder{
+  color: #000000;
+}
+.aceptarboton {
+  margin-top: 7%;
+  font-family: "Share Tech Mono", monospace;
+  background-color: #98faff;
+  border-radius: 10%;
+  color: #000000;
+  padding: 8px 16px;
+  cursor: pointer;
+}

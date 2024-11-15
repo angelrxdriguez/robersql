@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLIENTES</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="fotos/gerente.png" alt="" class="fotoh">
+        <h1 class="tit">GESTOR DE CLIENTES</h1>
+        <img src="fotos/gerente.png" alt=""class="fotoh">
+    </header>
+    <div class="login-box">
+        <h2 class="tit">ADMINISTRADOR</h2>
+        <form action="funciones.php" method="post">
+            <div class="user-box">
+                <input type="text" name="nombre" required="" id="nombreUsuario">
+                <label>NOMBRE DE USUARIO</label>
+              </div>
+              <div class="user-box">
+                <input type="password" name="contrasena" required="" id="contrasenaUsuario">
+                <label>CONTRASEÑA</label>
+              </div>
+                <button type="submit"><p class="acceder">ACCEDER</p></button>
+            </form>
+        <p>EN CASO DE NO SER ADMINISTRADOR, PUEDES ACCEDER A LOS CLIENTES<a href="lista.php"> HACIENDO CLICK AQUI</a></p>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="jquery.js"></script>
+</body>
+</html>
